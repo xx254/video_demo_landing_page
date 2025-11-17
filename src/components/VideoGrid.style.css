@@ -1,0 +1,44 @@
+.video-grid-container {
+  max-width: 3800px; /* 再次增加宽度，让视频更大 */
+  margin: 0 auto;
+  padding: 0 1.5rem; /* 进一步减小外边距 */
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 固定三列布局 */
+  gap: 1.2rem; /* 进一步减小卡片间距 */
+  margin-bottom: 3rem;
+}
+
+/* 中等屏幕：两列 */
+@media (max-width: 1400px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.no-videos {
+  text-align: center;
+  padding: 3rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* 小屏幕：单列 */
+@media (max-width: 1200px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-grid-container {
+    padding: 0 1.5rem; /* 1rem * 1.5 */
+  }
+
+  .video-grid {
+    gap: 2.25rem; /* 1.5rem * 1.5 */
+  }
+}
+

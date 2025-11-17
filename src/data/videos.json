@@ -1,0 +1,339 @@
+[
+  {
+    "id": 1,
+    "title": "Case 1: Viral Video Remake",
+    "description": "What went viral will go viral again. Turn yesterday’s viral moment into tomorrow’s revenue.",
+    "displayType": "comparison",
+    "beforeVideo": {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@ejaycruzz/video/7356466243987180843"
+    },
+    "afterVideo": {
+      "type": "youtube",
+      "url": "https://youtube.com/shorts/W5xSHIH9fHo"
+    },
+    "moreVideos": [
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/TEfZs1eV9W8" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/r6bdt47abLI" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/T-NPeK-uezg" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/q-szZi_ZmuM" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/lL4EJW30l2M" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/ZIPukq_iHiE" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/47aFYYqc63U" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/zZWVTFRk_Vc" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/BABCirxai1E" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/0PAVr03Es9M" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/OUrtBMPtCQk" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/DfnReIORrdc" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/nwTgBC4Gh4k" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/_3nqWAXAwv8" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/TRe-6xQIzGQ" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/j15O7giwPrY" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/09ulWlSV0-U" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/EdkYV82iYOc" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/H0ozKYpsj0o" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/LH6I590UChk" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/vzUkQBzbX_o" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/izaehbNLM0A" 
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/8RQXZmNChRI" 
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Case 2: Anime Remake",
+    "description": "AI recreates scenic shots and transition effects",
+    "displayType": "comparison",
+    "beforeVideo": {
+      "type": "tiktok",
+      "url": "https://www.tiktok.com/@gryphwing/video/7488016000420531463"
+    },
+    "afterVideo": {
+      "type": "youtube",
+      "url": "https://youtube.com/shorts/pKFVklGZT0Y"
+    },
+    "moreVideos": [
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/JGd2E4a3M80"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/1Ytc-m5E-pQ"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/IKWL4Eu32Gc"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/Gu90f8l9Lsk"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/FGS-9KIg6pI"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/XazavqsgwbE"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/GbQVzeuNDGk"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Case 3: NYC Street Interview",
+    "description": "Viral street interview capturing authentic reactions. \n Street-style questions that hook viewers in 3 seconds.",
+    "hideLabels": true,
+    "beforeVideo": {
+      "type": "youtube",
+      "url": "https://www.youtube.com/shorts/YjeZp2dcen8"
+    },
+    "afterVideo": {
+      "type": "youtube",
+      "url": "https://www.youtube.com/shorts/ai2h8ODr1EE"
+    },
+    "moreVideos": [
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/YjeZp2dcen8"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/_inJCzHFb3Y"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/d-TVV-JGWBo"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/F5zaEe-9gao"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/vFdeXuefcCs"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/H8qeoOVsdUY?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/xTDGOE5C1mo?feature=share"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Case 4: Product Demo & Creator",
+    "description": "High-trust demos that feel like a friend's recommendation. \n Seamless creator + product shots designed to convert.",
+    "displayType": "comparison",
+    "hideLabels": true,
+    "beforeVideo": {
+      "type": "youtube",
+      "url": "https://youtube.com/shorts/3EG1k97bSWI"
+    },
+    "afterVideo": {
+      "type": "youtube",
+      "url": "https://youtube.com/shorts/jDUYhZ1p3q0?feature=share"
+    },
+    "moreVideos": [
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/5XuXyyA7R9E?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/4BCcUMAPiko?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/UkOLYIQHGo8?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/dDr0k_slIC8?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/IPMRiAEwop0?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/hatib-NPbVA?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/d2H4idW4w5g?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/G7SR1ciONDk?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/iaCIHyQHMzU?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/62a0d3N0-II?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/AZVTZPeTqfc?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/G5cMxDU6cfM?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/Y2RJzz--K9E?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/FXjdnm_a13A?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/Z6aWPJU77Ko?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/N0jDY6LwMSw?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/zcI4EDAed7A?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/kv173rG9L9I?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/6I5mqpJtYUw?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/c8eao2B3k6Q?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/TNbx0XrMsTI?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/VxEU-UM0T4o?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/yvs07SKpoAc?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/EOsZVU2wH1A?feature=share"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/YDHwSfHuG_0?feature=share"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Case 5: Talking-head Video",
+    "description": "Direct-to-camera messages that feel personal. \n Your story, your face, our scripts and edits.",
+    "afterVideo": {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=h7MF-lvTLxw"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Case 6: Podcast Interview",
+    "description": "Turn long conversations into endless short clips. Every great quote becomes its own viral moment.",
+    "hideLabels": true,
+    "beforeVideo": {
+      "type": "youtube",
+      "url": "https://youtube.com/shorts/vD_n4YEUHPw?feature=share"
+    },
+    "afterVideo": {
+      "type": "youtube",
+      "url": "https://youtube.com/shorts/L792OyXXHbk?feature=share"
+    }
+  }
+]
+

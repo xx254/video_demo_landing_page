@@ -1,0 +1,161 @@
+.detail-page {
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+}
+
+.detail-container {
+  max-width: 3800px; /* 匹配首页宽度 */
+  margin: 0 auto;
+}
+
+.back-button {
+  padding: 0.6rem 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #667eea;
+  border: 2px solid #667eea;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.back-button:hover {
+  background: #667eea;
+  color: white;
+  transform: translateX(-5px);
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.detail-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.detail-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.detail-main-videos {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  max-width: 900px; /* 限制最大宽度 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detail-video-section {
+  flex: 1;
+  min-width: 0;
+  max-width: 400px; /* 限制单个视频的最大宽度 */
+}
+
+.detail-video-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.vs-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.video-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  display: inline-block;
+  letter-spacing: 0.3px;
+}
+
+.before-label {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.after-label {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.detail-more-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.more-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.detail-more-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 320px));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.detail-more-item {
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (max-width: 768px) {
+  .detail-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .detail-title {
+    font-size: 1.8rem;
+  }
+
+  .detail-description {
+    font-size: 1rem;
+  }
+
+  .detail-main-videos {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .detail-video-divider {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .detail-more-grid {
+    flex-direction: column;
+  }
+}
+

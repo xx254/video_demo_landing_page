@@ -1,0 +1,82 @@
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 2.25rem; /* 进一步减小垂直内边距 */
+  margin-bottom: 1rem; /* 进一步减小底部间距 */
+}
+
+.header-container {
+  max-width: 3800px; /* 匹配视频网格宽度 */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2rem; /* 大幅减小标题字体 */
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.3rem; /* 进一步减小间距 */
+}
+
+.header-subtitle {
+  font-size: 1rem; /* 大幅减小副标题字体 */
+  color: #555;
+  margin-bottom: 0.6rem; /* 进一步减小间距 */
+  line-height: 1.4; /* 减小行高 */
+}
+
+.header-labels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem; /* 减小标签间距 */
+  flex-wrap: wrap;
+}
+
+.header-label {
+  padding: 0.4rem 1.2rem; /* 减小标签内边距 */
+  border-radius: 20px; /* 减小圆角 */
+  font-weight: 600;
+  font-size: 0.85rem; /* 减小标签字体 */
+  letter-spacing: 0.3px;
+}
+
+.header-label.before {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.header-label.after {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.header-divider {
+  font-size: 0.9rem; /* 减小分隔符字体 */
+  font-weight: 700;
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.6rem 1.5rem; /* 进一步减小移动端垂直内边距 */
+  }
+
+  .header-title {
+    font-size: 1.5rem; /* 减小移动端标题 */
+  }
+
+  .header-subtitle {
+    font-size: 0.85rem; /* 减小移动端副标题 */
+  }
+
+  .header-label {
+    font-size: 0.75rem; /* 减小移动端标签 */
+    padding: 0.3rem 1rem;
+  }
+}
+
