@@ -5,7 +5,17 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <h1 className="header-title">AI Video Remake Showcase</h1>
+        <div className="title-wrapper">
+          <h1 className="header-title">AI Video Remake Showcase</h1>
+          <a 
+            href="https://veoapis.com" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="api-link"
+          >
+            Powered by VeoAPIs
+          </a>
+        </div>
         <p className="header-subtitle">
           Explore how AI perfectly replicates the narrative rhythm and cinematography of viral short videos
         </p>

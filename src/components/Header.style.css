@@ -12,6 +12,15 @@
   text-align: center;
 }
 
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
 .header-title {
   font-size: 2rem; /* 大幅减小标题字体 */
   font-weight: 700;
@@ -19,7 +28,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 0.3rem; /* 进一步减小间距 */
+  margin-bottom: 0;
+}
+
+.api-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.api-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
 }
 
 .header-subtitle {
@@ -66,8 +94,17 @@
     padding: 0.6rem 1.5rem; /* 进一步减小移动端垂直内边距 */
   }
 
+  .title-wrapper {
+    gap: 0.5rem;
+  }
+
   .header-title {
     font-size: 1.5rem; /* 减小移动端标题 */
+  }
+
+  .api-link {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
   }
 
   .header-subtitle {
