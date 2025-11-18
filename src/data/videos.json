@@ -1,5 +1,32 @@
 [
   {
+    "id": 0,
+    "title": "Case 0: Professional Services",
+    "description": "High-authority content from lawyers, doctors, and industry experts. Build trust and credibility with professional insights that convert viewers into clients.",
+    "moreVideos": [
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/mq9FnsUl5t8?feature=share",
+        "label": "Story-telling"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/m4wyEp7KRjg?feature=share",
+        "label": "Emotion"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/sFSdNPqs2sk?feature=share",
+        "label": "Multiple Avatars"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/z2bbnwtlnSc?feature=share",
+        "label": "Multiple Language: Latino"
+      }
+    ]
+  },
+  {
     "id": 1,
     "title": "Case 1: Viral Video Remake",
     "description": "What went viral will go viral again. Turn yesterday’s viral moment into tomorrow’s revenue.",

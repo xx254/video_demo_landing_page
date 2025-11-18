@@ -129,6 +129,22 @@
 .detail-more-item {
   width: 100%;
   max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.video-feature-label {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  text-align: center;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -156,6 +172,11 @@
 
   .detail-more-grid {
     flex-direction: column;
+  }
+
+  .video-feature-label {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
   }
 }
 

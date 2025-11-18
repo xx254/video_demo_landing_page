@@ -1,8 +1,12 @@
 // YouTube视频URL生成工具函数
 export const getYouTubeEmbedUrl = (videoId) => {
   if (!videoId) return '';
-  // 添加更多参数确保嵌入播放正常
-  return `https://www.youtube.com/embed/${videoId}?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1`;
+  // 添加更多参数确保嵌入播放正常，并隐藏频道信息
+  // modestbranding=1: 隐藏YouTube logo
+  // rel=0: 不显示相关视频
+  // fs=1: 允许全屏
+  // iv_load_policy=3: 隐藏视频注释
+  return `https://www.youtube.com/embed/${videoId}?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&fs=1&iv_load_policy=3&disablekb=0`;
 };
 
 // 获取YouTube缩略图URL

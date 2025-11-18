@@ -20,6 +20,21 @@
   width: 100%;
   height: 100%;
   border: none;
+  pointer-events: auto;
+}
+
+/* 尝试隐藏YouTube播放器上的频道信息和订阅按钮 */
+/* 注意：由于跨域限制，这些样式可能无法完全生效 */
+.youtube-player-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: transparent;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .youtube-player-error {

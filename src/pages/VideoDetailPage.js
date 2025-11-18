@@ -45,6 +45,9 @@ const VideoDetailPage = ({ videoId, onBack }) => {
             <div className="detail-more-grid">
               {moreVideos.map((videoItem, index) => (
                 <div key={index} className="detail-more-item">
+                  {videoItem.label && (
+                    <div className="video-feature-label">{videoItem.label}</div>
+                  )}
                   <VideoPlayer video={videoItem} />
                 </div>
               ))}
