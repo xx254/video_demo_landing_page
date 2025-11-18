@@ -20,14 +20,39 @@
   display: flex;
   gap: 1.2rem;
   align-items: stretch;
-  overflow: hidden; /* 防止溢出 */
+  position: relative; /* 为渐变遮罩定位 */
+  width: 100%;
+  max-width: 3800px; /* 限制最大宽度 */
+}
+
+/* 右侧渐变遮罩，提示可以滚动 */
+.inline-more-videos-container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 30px; /* 避开滚动条 */
+  width: 120px;
+  background: linear-gradient(to left, rgba(101, 116, 205, 0.3) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 8;
 }
 
 .video-card-wrapper.full-width .video-card {
   flex: 0 0 auto;
-  width: calc((100% - 4.8rem) / 5); /* 5个元素平均分配：1个卡片 + 4个视频，减去4个gap */
-  min-width: 280px;
+  width: 320px; /* Case 0 卡片固定宽度 */
+  min-width: 320px;
   max-width: 320px;
+}
+
+.inline-more-videos-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: calc(100% - 320px - 1.2rem); /* 剩余空间用于 slider */
+  overflow: visible;
 }
 
 .inline-more-videos-row {
@@ -36,10 +61,53 @@
   gap: 1.2rem;
   align-items: stretch;
   min-width: 0; /* 允许收缩 */
+  overflow-x: scroll; /* 强制横向滚动 */
+  overflow-y: hidden;
+  scroll-behavior: smooth; /* 平滑滚动 */
+  -webkit-overflow-scrolling: touch; /* iOS 滚动优化 */
+  scrollbar-width: auto; /* Firefox 滚动条样式 */
+  scrollbar-color: #a855f7 #f3e8ff; /* 滑块颜色 轨道颜色 */
+  padding-bottom: 1.5rem; /* 为滚动条留出更多空间 */
+  padding-right: 1rem; /* 右侧留出一些空间 */
+  position: relative;
+}
+
+/* 自定义滚动条样式 (Webkit browsers) - 明显的 slider bar */
+.inline-more-videos-row::-webkit-scrollbar {
+  height: 16px; /* 更高的滚动条，更明显 */
+}
+
+.inline-more-videos-row::-webkit-scrollbar-track {
+  background: #f3e8ff; /* 极浅紫色背景 */
+  border-radius: 8px;
+  margin: 0 20px; /* 左右留白 */
+  border: 2px solid #e9d5ff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.inline-more-videos-row::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #a855f7 0%, #c084fc 100%); /* 亮紫色渐变 */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.6);
+  border: 3px solid white; /* 白色边框，更明显 */
+}
+
+.inline-more-videos-row::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #9333ea 0%, #a855f7 100%);
+  box-shadow: 0 6px 16px rgba(168, 85, 247, 0.8);
+  transform: scaleY(1.1);
+  border-color: #faf5ff;
+}
+
+.inline-more-videos-row::-webkit-scrollbar-thumb:active {
+  box-shadow: 0 3px 10px rgba(168, 85, 247, 1);
+  background: linear-gradient(135deg, #7e22ce 0%, #9333ea 100%);
+  border-color: white;
 }
 
 .inline-video-item {
-  flex: 1;
+  flex: 0 0 auto; /* 不伸缩，保持固定宽度 */
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -48,8 +116,8 @@
   padding: 1.2rem;
   box-shadow: 0 12px 45px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 0; /* 允许收缩 */
-  max-width: 320px; /* 统一最大宽度 */
+  width: 280px; /* 固定宽度 */
+  min-width: 280px; /* 最小宽度 */
 }
 
 .inline-video-item:hover {
@@ -131,6 +199,36 @@
   box-shadow: 0 6px 25px rgba(250, 112, 154, 0.7);
 }
 
+/* Dentist - 绿色渐变 */
+.inline-video-label.label-dentist {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5);
+}
+
+.inline-video-label.label-dentist:hover {
+  box-shadow: 0 6px 25px rgba(16, 185, 129, 0.7);
+}
+
+/* Financial Advisor - 金色渐变 */
+.inline-video-label.label-financial {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.5);
+}
+
+.inline-video-label.label-financial:hover {
+  box-shadow: 0 6px 25px rgba(245, 158, 11, 0.7);
+}
+
+/* Divorce Lawyer - 红色渐变 */
+.inline-video-label.label-divorce {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.5);
+}
+
+.inline-video-label.label-divorce:hover {
+  box-shadow: 0 6px 25px rgba(239, 68, 68, 0.7);
+}
+
 /* 中等屏幕：两列 */
 @media (max-width: 1400px) {
   .video-grid {
@@ -177,11 +275,13 @@
   }
   
   .inline-more-videos-row {
-    flex-wrap: wrap;
+    /* 保持横向滚动，不换行 */
   }
   
   .inline-video-item {
-    flex: 0 0 calc(50% - 0.6rem);
+    flex: 0 0 auto;
+    width: 250px; /* 小屏幕上稍微减小宽度 */
+    min-width: 250px;
   }
 }
 
@@ -194,6 +294,11 @@
     gap: 2.25rem; /* 1.5rem * 1.5 */
   }
   
+  .inline-video-item {
+    width: 240px; /* 移动端更小的宽度 */
+    min-width: 240px;
+  }
+  
   .inline-video-label {
     padding: 0.5rem 0.8rem;
     font-size: 0.7rem;
@@ -202,6 +307,20 @@
   
   .label-icon {
     font-size: 0.9rem;
+  }
+  
+  /* 移动端保留滚动条作为 slider bar */
+  .inline-more-videos-row::-webkit-scrollbar {
+    height: 10px; /* 移动端稍小一点 */
+  }
+  
+  .inline-more-videos-row::-webkit-scrollbar-track {
+    margin: 0 10px;
+  }
+  
+  /* 移动端隐藏右侧渐变 */
+  .inline-more-videos-container::after {
+    display: none;
   }
 }
 

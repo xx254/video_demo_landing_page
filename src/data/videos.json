@@ -6,13 +6,23 @@
     "moreVideos": [
       {
         "type": "youtube",
-        "url": "https://youtube.com/shorts/mq9FnsUl5t8?feature=share",
-        "label": "Story-telling"
+        "url": "https://youtube.com/shorts/CXoBYmx1EPk?feature=share",
+        "label": "Podcast Interview"
       },
       {
         "type": "youtube",
-        "url": "https://youtube.com/shorts/m4wyEp7KRjg?feature=share",
-        "label": "Emotion"
+        "url": "https://youtube.com/shorts/gKibGruioB4",
+        "label": "Build Trust"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/z2bbnwtlnSc?feature=share",
+        "label": "Spanish Language"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/mq9FnsUl5t8?feature=share",
+        "label": "Story-telling"
       },
       {
         "type": "youtube",
@@ -21,8 +31,13 @@
       },
       {
         "type": "youtube",
-        "url": "https://youtube.com/shorts/z2bbnwtlnSc?feature=share",
-        "label": "Multiple Language: Latino"
+        "url": "https://youtube.com/shorts/m4wyEp7KRjg?feature=share",
+        "label": "Emotion"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtube.com/shorts/rwQWoQiVynk?feature=share",
+        "label": "Dentist"
       }
     ]
   },

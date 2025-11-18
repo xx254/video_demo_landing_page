@@ -23,38 +23,49 @@ const VideoGrid = ({ onMoreClick }) => {
             <VideoCard video={video} onMoreClick={onMoreClick} />
             {/* Case 0: 在卡片右侧显示 more videos */}
             {video.id === 0 && video.moreVideos && video.moreVideos.length > 0 && (
-              <div className="inline-more-videos-row">
-                {video.moreVideos.map((videoItem, index) => {
-                  // 根据 label 确定样式类和图标
-                  let labelClass = 'inline-video-label';
-                  let icon = '';
-                  
-                  if (videoItem.label === 'Story-telling') {
-                    labelClass += ' label-storytelling';
-                    icon = '📖';
-                  } else if (videoItem.label === 'Emotion') {
-                    labelClass += ' label-emotion';
-                    icon = '❤️';
-                  } else if (videoItem.label === 'Multiple Avatars') {
-                    labelClass += ' label-avatars';
-                    icon = '👥';
-                  } else if (videoItem.label && videoItem.label.includes('Multiple Language')) {
-                    labelClass += ' label-language';
-                    icon = '🌎';
-                  }
-                  
-                  return (
-                    <div key={index} className="inline-video-item">
-                      {videoItem.label && (
-                        <div className={labelClass}>
-                          <span className="label-icon">{icon}</span>
-                          <span className="label-text">{videoItem.label}</span>
-                        </div>
-                      )}
-                      <VideoPlayer video={videoItem} />
-                    </div>
-                  );
-                })}
+              <div className="inline-more-videos-container">
+                <div className="inline-more-videos-row">
+                  {video.moreVideos.map((videoItem, index) => {
+                    // 根据 label 确定样式类和图标
+                    let labelClass = 'inline-video-label';
+                    let icon = '';
+                    
+                    if (videoItem.label === 'Story-telling') {
+                      labelClass += ' label-storytelling';
+                      icon = '📖';
+                    } else if (videoItem.label === 'Emotion') {
+                      labelClass += ' label-emotion';
+                      icon = '❤️';
+                    } else if (videoItem.label === 'Multiple Avatars') {
+                      labelClass += ' label-avatars';
+                      icon = '👥';
+                    } else if (videoItem.label && videoItem.label.includes('Spanish Language')) {
+                      labelClass += ' label-language';
+                      icon = '🌎';
+                    } else if (videoItem.label === 'Dentist') {
+                      labelClass += ' label-dentist';
+                      icon = '🦷';
+                    } else if (videoItem.label === 'Build Trust') {
+                      labelClass += ' label-financial';
+                      icon = '💰';
+                    } else if (videoItem.label === 'Podcast Interview') {
+                      labelClass += ' label-divorce';
+                      icon = '⚖️';
+                    }
+                    
+                    return (
+                      <div key={index} className="inline-video-item">
+                        {videoItem.label && (
+                          <div className={labelClass}>
+                            <span className="label-icon">{icon}</span>
+                            <span className="label-text">{videoItem.label}</span>
+                          </div>
+                        )}
+                        <VideoPlayer video={videoItem} />
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             )}
           </div>
