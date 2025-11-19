@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="title-wrapper">
-          <h1 className="header-title">AI Video Remake Showcase</h1>
+          <h1 className="header-title">Personal Brand Videos — Powered by AI</h1>
           <a 
             href="https://veoapis.com" 
             target="_blank" 
